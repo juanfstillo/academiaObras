@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Agregar Torneo </title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"> 
+  </head>
+  <body>
+     <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Navbar brand -->
+      <a class="navbar-brand mt-2 mt-lg-0" href="#">
+        <img
+          src=""
+          height="15"
+          alt=""
+          loading="lazy"
+        />
+      </a>
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="form.html">Registrate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="jugadores.html">Jugadores</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="torneos.html">Torneos</a>
+        </li>
+      </ul>
+      <!-- Left links -->
+    </div>
+    <!-- Collapsible wrapper -->
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+<h1 class="text-center">Agregar Torneo!</h1>
+    <img src="../images/766-slide2.gif" alt="serena" srcset="">
+    <!-- Button trigger modal -->
+    <div id="spnModal" class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <button id="btnModal" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#exampleModal">
+    Agregar Torneo
+    </button>
+    <div id="contenidoGenerado" class="row row-cols-1 row-cols-md-4">
+
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Agrega un Nuevo Torneo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="modalForm">
+              <div class="form-group">
+                <label for="nombreRestaurant">Nombre del Torneo</label>
+                <input type="text" class="form-control" id="nombreRestaurant" placeholder="Future 1">
+              </div>
+              <div class="form-group">
+                <label for="nombreRestaurant">Direccion del Torneo</label>
+                <input type="text" class="form-control" id="nombreDireccion" placeholder="Buenos Aires">
+              </div>
+              <div class="form-group">
+                <label for="selectProvincias">Elegir Provincia</label>
+                <select class="form-control" id="selectProvincias">
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="selectMunicipios">Elegir Municipio</label>
+                <select class="form-control" id="selectMunicipios">
+                </select>
+              </div>
+              <button type="submit" class="btn btn-info">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-light text-center text-lg-start">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Copyright:
+        <a class="text-dark" href="https://mdbootstrap.com/">Academia de Tenis Obras</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- SCRIPTS JS -->
+    <script src="../js/lib/jquery-3.6.0.min.js"></script>
+    <script src="../js/lib/bootstrap.bundle.min.js"></script>
+    <script src="../js/torneos.js"></script>
+  </body>
+</html>
